@@ -1,0 +1,47 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "sns:ListSubscriptionsByTopic",
+                "sns:Publish",
+                "sns:GetTopicAttributes",
+                "sns:DeleteTopic",
+                "sns:CreateTopic",
+                "sns:ConfirmSubscription",
+                "sns:SetTopicAttributes",
+                "sns:Subscribe"
+            ],
+            "Resource": "arn:aws:sns:us-east-1:464599248654:InstanceStateNoifty"
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "sns:CreatePlatformApplication",
+                "sns:SetSMSAttributes",
+                "sns:CreatePlatformEndpoint",
+                "sns:GetPlatformApplicationAttributes",
+                "sns:ListTopics",
+                "sns:Unsubscribe",
+                "sns:GetSubscriptionAttributes",
+                "sns:ListSubscriptions",
+                "sns:CheckIfPhoneNumberIsOptedOut",
+                "sns:OptInPhoneNumber",
+                "sns:DeleteEndpoint",
+                "sns:ListEndpointsByPlatformApplication",
+                "sns:ListPhoneNumbersOptedOut",
+                "sns:SetEndpointAttributes",
+                "sns:GetEndpointAttributes",
+                "sns:SetSubscriptionAttributes",
+                "sns:DeletePlatformApplication",
+                "sns:SetPlatformApplicationAttributes",
+                "sns:GetSMSAttributes",
+                "sns:ListPlatformApplications"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
